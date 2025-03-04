@@ -9,6 +9,9 @@ export default function ProductList() {
       <Link href="/products/1">Product 1</Link>
       <Link href="/products/2">Product 2</Link>
       <Link href="/products/3">Product 3</Link>
+
+      <Link href="/products/best-sellers/playstation">Playstation</Link>
+      <Link href="/products/category/electronics/laptop">Laptop</Link>
     </View>
   );
 }
