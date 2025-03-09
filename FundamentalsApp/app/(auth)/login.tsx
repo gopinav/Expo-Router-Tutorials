@@ -1,10 +1,15 @@
-import { StyleSheet, Text, View } from "react-native";
+import { Button, StyleSheet, Text, View } from "react-native";
 import React from "react";
+import { Link, router } from "expo-router";
 
 export default function Login() {
+  const loginHandler = () => {
+    router.replace("/profile");
+  };
   return (
     <View style={styles.container}>
-      <Text>Login</Text>
+      <Button title="Login" onPress={loginHandler} />
+      <Link href="./register">Register</Link>
     </View>
   );
 }
